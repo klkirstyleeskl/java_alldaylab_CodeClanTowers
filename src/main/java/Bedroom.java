@@ -19,20 +19,25 @@ public class Bedroom {
 
 
     public int getNumber(){
-        return this.number;
+        return number;
     }
 
 
     public String getType(){
-        return this.type;
+        return type;
     }
 
     public int getCapacity(){
-        return this.capacity;
+        return capacity;
     }
 
     public double getNightlyRate(){
-        return this.nightlyRate;
+        return nightlyRate;
     }
+
+    public int guestCount(){
+        return guests.size();
+    }
+
 
 }
