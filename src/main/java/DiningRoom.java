@@ -14,6 +14,18 @@ public class DiningRoom {
         this.diningRoomGuests = new ArrayList<>();
     }
 
+    public int getCapacity(){
+        return capacity;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public int guestCount(){
+        return  diningRoomGuests.size();
+    }
+
 }
 
 
