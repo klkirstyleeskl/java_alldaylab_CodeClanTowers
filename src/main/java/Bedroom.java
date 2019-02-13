@@ -39,11 +39,11 @@ public class Bedroom {
         return guests.size();
     }
 
-    public void addGuest(Guest guest){
+    public Guest addGuest(Guest guest){
         if (this.guestCount() < this.capacity){
             this.guests.add(guest);
         }
-
+        return guest;
     }
 
     public void removeGuest(Guest guest){

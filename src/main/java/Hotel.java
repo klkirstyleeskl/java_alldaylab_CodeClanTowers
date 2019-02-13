@@ -32,4 +32,15 @@ public class Hotel {
     public void addConferenceRoom(ConferenceRoom conferenceRoom){
         this.conferenceRooms.add(conferenceRoom);
     }
+
+    public void checkIn(Guest guest, Bedroom bedroom){
+        bedroom.addGuest(guest);
+    }
+
+    public void checkOut(Guest guest, Bedroom bedroom){
+        bedroom.removeGuest(guest);
+    }
+
+
+
 }
