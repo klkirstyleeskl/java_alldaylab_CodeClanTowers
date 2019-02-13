@@ -24,6 +24,8 @@ public class HotelTest {
 
 
         hotel.addBedRoom(bedroom);
+        hotel.addDiningRoom(diningRoom);
+        hotel.addConferenceRoom(conferenceRoom);
 
     }
 //
@@ -31,16 +33,16 @@ public class HotelTest {
 //    public void bedRoomStartsEmpty(){
 //        assertEquals(0, hotel.bedRoomCount());
 //    }
+//
+//    @Test
+//    public void confernenceRoomStartsEmpty(){
+//        assertEquals(0, hotel.conferenceRoomCount());
+//    }
 
-    @Test
-    public void confernenceRoomStartsEmpty(){
-        assertEquals(0, hotel.conferenceRoomCount());
-    }
-
-    @Test
-    public void diningRoomStartsEmpty(){
-        assertEquals(0, hotel.diningRoomCount());
-    }
+//    @Test
+//    public void diningRoomStartsEmpty(){
+//        assertEquals(0, hotel.diningRoomCount());
+//    }
 
     @Test
     public void canAddBedRoomToHotel(){
@@ -49,10 +51,13 @@ public class HotelTest {
 
     @Test
     public void canAddDiningRoomToHotel(){
-        hotel.addDiningRoom();
         assertEquals(1, hotel.diningRoomCount());
     }
 
+    @Test
+    public void canAddConferenceRoomToHotel(){
+        assertEquals(1, hotel.conferenceRoomCount());
+    }
 
 
 

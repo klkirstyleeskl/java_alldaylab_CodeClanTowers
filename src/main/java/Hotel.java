@@ -25,7 +25,11 @@ public class Hotel {
         this.bedrooms.add(bedroom);
     }
 
-    public void addBedRoom(Bedroom bedroom){
-        this.bedrooms.add(bedroom);
+    public void addDiningRoom(DiningRoom diningRoom){
+        this.diningRooms.add(diningRoom);
+    }
+
+    public void addConferenceRoom(ConferenceRoom conferenceRoom){
+        this.conferenceRooms.add(conferenceRoom);
     }
 }
