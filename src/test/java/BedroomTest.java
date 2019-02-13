@@ -17,4 +17,20 @@ public class BedroomTest {
     public void hasNumber(){
         assertEquals(17, bedroom.getNumber());
     }
+
+    @Test
+    public void hasType(){
+        assertEquals("Suite", bedroom.getType());
+    }
+
+    @Test
+    public void hasCapacity(){
+        assertEquals(4, bedroom.getCapacity());
+    }
+
+    @Test
+    public void hasNightlyRate(){
+        assertEquals(155.50, bedroom.getNightlyRate(), 0.01);
+    }
+
 }

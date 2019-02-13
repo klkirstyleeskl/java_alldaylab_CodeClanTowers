@@ -20,7 +20,19 @@ public class Bedroom {
 
     public int getNumber(){
         return this.number;
-    };
+    }
 
+
+    public String getType(){
+        return this.type;
+    }
+
+    public int getCapacity(){
+        return this.capacity;
+    }
+
+    public double getNightlyRate(){
+        return this.nightlyRate;
+    }
 
 }
